@@ -20,9 +20,9 @@ export const Skills = () => {
         {
             title: 'Coding Languages',
             items: [
-              { name: 'HTML/CSS', logo: htmlCssLogo, size: { width: 90, height: 60 } },
-              { name: 'JavaScript', logo: jsLogo, size: { width: 110, height: 55 } },
-              { name: 'Python', logo: pythonLogo, size: { width: 160, height: 80 } },
+              { name: 'HTML/CSS', logo: htmlCssLogo, size: { width: 80, height: 50 } },
+              { name: 'JavaScript', logo: jsLogo, size: { width: 110, height: 50 } },
+              { name: 'Python', logo: pythonLogo, size: { width: 150, height: 50 } },
               { name: 'Java', logo: javaLogo, size: { width: 110, height: 70 } }
             ]
           },

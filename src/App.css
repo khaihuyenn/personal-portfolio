@@ -274,7 +274,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /****************************** Banner CSS ******************************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 220px 0 100px 0;
   background-image: url('./asset/img/banner-bg.png');
   background-position: top center;
   background-size: cover;
@@ -309,7 +309,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #fff;
   font-weight: 700;
   font-size: 20px;
-  margin-top: 60px;
+  margin-top: 30px;
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
@@ -343,16 +343,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /****************************** Skills CSS ******************************/
 .skill {
-  padding: 0 0 50px 0;
-  position: relative;
+  margin-top: 0;
+  padding: 110px 0 100px 0;
   background-image: url('./asset/img/skills-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .skill-bx {
   background: #746f6f;
   border-radius: 64px;
   text-align: center;
-  padding: 60px 50px;
-  margin-top: -60px;
+  padding: 10px 10px;
+  margin-top: -10px;
 }
 .skill h2 {
   font-size: 55px;
@@ -380,7 +383,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .sub-skill-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Adjust the # of columns/rows */
-  gap: 20px;
+  gap: 0;
 }
 .sub-skill-item {
   margin: 15px;
@@ -393,4 +396,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #fff;
   font-size: 15px;
   margin: 0;
+}
+/****************************** Education CSS ******************************/
+.education {
+  margin-top: 0;
+  padding: 120px 0 250px 0;
+  background-image: url('./asset/img/education-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
