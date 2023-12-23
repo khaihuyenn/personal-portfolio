@@ -9,6 +9,9 @@ import GitHubLogo from "../asset/img/GitHub-logo.png";
 import bootstrapLogo from "../asset/img/bootstrap-logo.png";
 import NodeJSLogo from "../asset/img/nodejs-logo.png";
 import ReactLogo from "../asset/img/react-logo.png";
+import vsCodeLogo from "../asset/img/vscode-logo.png";
+import androidstudioLogo from "../asset/img/androidstudio-logo.png";
+import intelliJLogo from "../asset/img/intelliJ-logo.png";
 import arrow1 from "../asset/img/arrow1.svg";
 import arrow2 from "../asset/img/arrow2.svg";
 
@@ -17,10 +20,10 @@ export const Skills = () => {
         {
             title: 'Coding Languages',
             items: [
-              { name: 'HTML/CSS', logo: htmlCssLogo, size: { width: 80, height: 50 } },
-              { name: 'JavaScript', logo: jsLogo, size: { width: 90, height: 55 } },
-              { name: 'Python', logo: pythonLogo, size: { width: 140, height: 70 } },
-              { name: 'Java', logo: javaLogo, size: { width: 90, height: 70 } }
+              { name: 'HTML/CSS', logo: htmlCssLogo, size: { width: 90, height: 60 } },
+              { name: 'JavaScript', logo: jsLogo, size: { width: 110, height: 55 } },
+              { name: 'Python', logo: pythonLogo, size: { width: 160, height: 80 } },
+              { name: 'Java', logo: javaLogo, size: { width: 110, height: 70 } }
             ]
           },
           {
@@ -29,11 +32,18 @@ export const Skills = () => {
               { name: 'GitHub', logo: GitHubLogo, size: { width: 50, height: 50 } }, 
               { name: 'Git', logo: gitLogo, size: { width: 50, height: 50 } },
               { name: 'Bootstrap', logo: bootstrapLogo, size: { width: 50, height: 50 } },
-              { name: 'Node.js', logo: NodeJSLogo, size: { width: 50, height: 50 } },
+              { name: 'Node.js', logo: NodeJSLogo, size: { width: 70, height: 50 } },
               { name: 'React', logo: ReactLogo, size: { width: 50, height: 50 } },
             ]
           },
-          
+          {
+            title: 'IDEs',
+            items: [
+              { name: 'VS Code', logo: vsCodeLogo, size: { width: 50, height: 50 } },
+              { name: 'Android Studio', logo: androidstudioLogo, size: { width: 50, height: 50 } },
+              { name: 'IntelliJ', logo: intelliJLogo, size: { width: 50, height: 50 } }
+            ]
+          }
       ];
 
     const responsive = {
@@ -71,12 +81,14 @@ export const Skills = () => {
                         {skillsData.map((category, index) => (
                                     <div key={index} className="item">
                                         <h5 className="category-title">{category.title}</h5>
+                                        <div className="sub-skill-container">
                                         {category.items.map((subSkill, subIndex) => (
                                             <div key={subIndex} className="sub-skill-item">
                                                 <img src={subSkill.logo} alt={`Logo for ${subSkill.name}`} style={{ width: subSkill.size.width, height: subSkill.size.height }} />
                                                 <p>{subSkill.name}</p>
                                             </div>
                                         ))}
+                                        </div>
                                     </div>
                                 ))}
                         </Carousel>
