@@ -9,8 +9,9 @@ export const Banner = () => {
     const [text, setText] = useState(100);
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const [index, setIndex] = useState(1);
+    const [showCursor, setShowCursor] = useState(true);
     const toRotate = [ "CS student at Georgia Tech" ];
-    const period = 2000;
+    const period = 1000;
 
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -18,7 +19,18 @@ export const Banner = () => {
         }, delta);
     
         return () => { clearInterval(ticker) };
-      }, [text])
+      }, [text, delta])
+
+      useEffect(() => {
+        // Toggle cursor every 500 milliseconds
+        const cursorInterval = setInterval(() => {
+          setShowCursor((prev) => !prev);
+        }, 500);
+    
+        return () => {
+          clearInterval(cursorInterval);
+        };
+      }, [text]);
     
       const tick = () => {
         let i = loopNum % toRotate.length;
@@ -39,7 +51,7 @@ export const Banner = () => {
           setIsDeleting(false);
           setLoopNum(loopNum + 1);
           setIndex(1);
-          setDelta(200);
+          setDelta(100);
         } else {
           setIndex(prevIndex => prevIndex + 1);
           setDelta(100);
@@ -52,7 +64,7 @@ export const Banner = () => {
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to my Portfolio</span>
-                        <h1>{`Hi! I'm Khai Huyen`}<span className="wrap"><h2>{text}</h2></span></h1>
+                        <h1>{`Hi! I'm Khai Huyen`}<span className="wrap"><h2>{text} {showCursor && "|"}</h2></span></h1>
                         <p>I am a third-year undergraduate student at Georgia Tech, planning to graduate in 2025 with a Bachelor's in Computer Science. 
                             Currently, I am pursuing Intelligence and Devices concentrations. I am also interested in AI and Robotics. 
                             My career goal is to be a sufficient full-stack software engineer.</p>
