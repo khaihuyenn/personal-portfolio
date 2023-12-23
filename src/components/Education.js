@@ -1,34 +1,35 @@
+import gtLogo from "../asset/img/gt-logo.png";
+import gsuLogo from "../asset/img/gsu-logo.png"
+
 export const Education = () => {
     return (
     <section className="education" id="education">
-    <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
-      <div className="container">
-        <div className="row">
+    <h1 class="heading"> My <span>Education</span></h1>
+      <div className="box-container">
           <div className="box">
             <div className="image">
-              <img draggable="false" src="./assets/images/educat/college.jpg" alt="" />
+              <img src={gtLogo} alt="" style={{ width: 200, height: 220 }} />
             </div>
             <div className="content">
-              <h3>Bachelor of Engineering in Information Technology</h3>
-              <p>Zeal College of Engineering and Research | SPPU</p>
-              <h4>2020-2024 | Pursuing</h4>
+              <h3>Georgia Institute of Technology</h3>
+              <p>Bachelor of Science, Computer Science | Concentration: Intelligence and Devices</p>
+              <h4>2023-Present | Expected Graduation: 2025</h4>
+              <p1>Relevant Courseworks: Data Structures & Algorithms, Objects and Design</p1>
             </div>
           </div>
 
           <div className="box">
             <div className="image">
-              <img draggable="false" src="./assets/images/educat/school.jpg" alt="" />
+              <img src={gsuLogo} alt="" style={{ width: 280, height: 220 }} />
             </div>
             <div className="content">
-              <h3>HSC Science | Informatic Practices</h3>
-              <p>Shri L. G. Haria Multipurpose School | CBSE</p>
-              <h4>2018-2020 | Completed</h4>
+              <h3>Georgia State University</h3>
+              <p>Bachelor of Science, Computer Science</p>
+              <h4>2021-2023</h4>
+              <p1>Relevant Courseworks: Object-Oriented Programming, Linear Algebra, Discrete Mathematics</p1>
             </div>
           </div>
-          
-          {/* Add more education boxes as needed */}
         </div>
-      </div>
     </section>
   )
 }
