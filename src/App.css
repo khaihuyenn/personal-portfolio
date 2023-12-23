@@ -340,3 +340,56 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
+
+/****************************** Skills CSS ******************************/
+.skill {
+  padding: 0 0 50px 0;
+  position: relative;
+  background-image: url('./asset/img/skills-bg.png');
+}
+
+.skill-bx {
+  background: #202466;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+}
+
+.skill h2 {
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.skill p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 10px 0 30px 0;
+}
+
+.skill-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.skill-slider .item {
+  text-align: center;
+}
+
+.sub-skill-item {
+  margin: 15px;
+}
+
+.sub-skill-item img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.sub-skill-item p {
+  color: #fff;
+  font-size: 20px;
+  margin: 0;
+}
