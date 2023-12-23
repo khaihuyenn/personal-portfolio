@@ -4,6 +4,11 @@ import htmlCssLogo from "../asset/img/html-css-logo.png";
 import jsLogo from "../asset/img/js-logo.png";
 import pythonLogo from "../asset/img/python-logo.png";
 import javaLogo from "../asset/img/java-logo.png";
+import gitLogo from "../asset/img/git-logo.png";
+import GitHubLogo from "../asset/img/GitHub-logo.png";
+import bootstrapLogo from "../asset/img/bootstrap-logo.png";
+import NodeJSLogo from "../asset/img/nodejs-logo.png";
+import ReactLogo from "../asset/img/react-logo.png";
 import arrow1 from "../asset/img/arrow1.svg";
 import arrow2 from "../asset/img/arrow2.svg";
 
@@ -12,10 +17,20 @@ export const Skills = () => {
         {
             title: 'Coding Languages',
             items: [
-              { name: 'HTML/CSS', logo: htmlCssLogo },
-              { name: 'JavaScript', logo: jsLogo },
-              { name: 'Python', logo: pythonLogo },
-              { name: 'Java', logo: javaLogo }
+              { name: 'HTML/CSS', logo: htmlCssLogo, size: { width: 80, height: 50 } },
+              { name: 'JavaScript', logo: jsLogo, size: { width: 90, height: 55 } },
+              { name: 'Python', logo: pythonLogo, size: { width: 140, height: 70 } },
+              { name: 'Java', logo: javaLogo, size: { width: 90, height: 70 } }
+            ]
+          },
+          {
+            title: 'Tools/Frameworks',
+            items: [
+              { name: 'GitHub', logo: GitHubLogo, size: { width: 50, height: 50 } }, 
+              { name: 'Git', logo: gitLogo, size: { width: 50, height: 50 } },
+              { name: 'Bootstrap', logo: bootstrapLogo, size: { width: 50, height: 50 } },
+              { name: 'Node.js', logo: NodeJSLogo, size: { width: 50, height: 50 } },
+              { name: 'React', logo: ReactLogo, size: { width: 50, height: 50 } },
             ]
           },
           
@@ -51,14 +66,14 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>coding...<br></br> coding...</p>
+                        <p>// Coding Languages // Tools/Frameworks // IDEs // <br></br></p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                         {skillsData.map((category, index) => (
                                     <div key={index} className="item">
-                                        <h5>{category.title}</h5>
+                                        <h5 className="category-title">{category.title}</h5>
                                         {category.items.map((subSkill, subIndex) => (
                                             <div key={subIndex} className="sub-skill-item">
-                                                <img src={subSkill.logo} alt={`Logo for ${subSkill.name}`} />
+                                                <img src={subSkill.logo} alt={`Logo for ${subSkill.name}`} style={{ width: subSkill.size.width, height: subSkill.size.height }} />
                                                 <p>{subSkill.name}</p>
                                             </div>
                                         ))}
