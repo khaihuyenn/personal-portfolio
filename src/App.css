@@ -379,7 +379,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .sub-skill-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* Adjust the # of columns/rows */
   gap: 20px;
 }
 .sub-skill-item {
