@@ -23,7 +23,7 @@ export const Skills = () => {
               { name: 'HTML/CSS', logo: htmlCssLogo, size: { width: 80, height: 50 } },
               { name: 'JavaScript', logo: jsLogo, size: { width: 110, height: 50 } },
               { name: 'Python', logo: pythonLogo, size: { width: 150, height: 50 } },
-              { name: 'Java', logo: javaLogo, size: { width: 110, height: 70 } }
+              { name: 'Java', logo: javaLogo, size: { width: 110, height: 50 } }
             ]
           },
           {
@@ -84,8 +84,10 @@ export const Skills = () => {
                                         <div className="sub-skill-container">
                                         {category.items.map((subSkill, subIndex) => (
                                             <div key={subIndex} className="sub-skill-item">
+                                              <div className="sub-skill-content">
                                                 <img src={subSkill.logo} alt={`Logo for ${subSkill.name}`} style={{ width: subSkill.size.width, height: subSkill.size.height }} />
                                                 <p>{subSkill.name}</p>
+                                              </div>  
                                             </div>
                                         ))}
                                         </div>
