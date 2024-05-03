@@ -65,9 +65,6 @@ export const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to my Portfolio</span>
                         <h1>{`Hi! I'm Khai Huyen`}<span className="wrap"><h2>{text} {showCursor && "|"}</h2></span></h1>
-                        <p>I am an undergraduate student at Georgia Tech, planning to graduate in 2025 with a Bachelor's in Computer Science. 
-                            Currently, I am pursuing Intelligence and Devices concentrations. I am also interested in AI and Robotics. 
-                            My career goal is to be a sufficient full-stack software engineer.</p>
                             <button onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size = {25}/></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
