@@ -14,7 +14,7 @@ export const Education = () => {
               <h3>Georgia Institute of Technology</h3>
               <p>Bachelor of Science, Computer Science | Concentration: Intelligence and Devices</p>
               <h4>2023-Present | Expected Graduation: 2025</h4>
-              <p1>Relevant Courseworks: Data Structures & Algorithms, Objects and Design</p1>
+              <p1>Relevant Courseworks: Data Structures & Algorithms, Objects and Design, Computer Organization & Programming</p1>
             </div>
           </div>
 
