@@ -4,6 +4,7 @@ import htmlCssLogo from "../asset/img/html-css-logo.png";
 import jsLogo from "../asset/img/js-logo.png";
 import pythonLogo from "../asset/img/python-logo.png";
 import javaLogo from "../asset/img/java-logo.png";
+import cLogo from "../asset/img/c-logo.png";
 import gitLogo from "../asset/img/git-logo.png";
 import GitHubLogo from "../asset/img/GitHub-logo.png";
 import bootstrapLogo from "../asset/img/bootstrap-logo.png";
@@ -23,7 +24,8 @@ export const Skills = () => {
               { name: 'HTML/CSS', logo: htmlCssLogo, size: { width: 80, height: 50 } },
               { name: 'JavaScript', logo: jsLogo, size: { width: 110, height: 50 } },
               { name: 'Python', logo: pythonLogo, size: { width: 150, height: 50 } },
-              { name: 'Java', logo: javaLogo, size: { width: 110, height: 50 } }
+              { name: 'Java', logo: javaLogo, size: { width: 110, height: 50 } },
+              { name: 'C', logo: cLogo, size: {width: 70, height: 50}}
             ]
           },
           {
@@ -76,7 +78,7 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>// Coding Languages // Tools/Frameworks // IDEs // <br></br></p>
+                        <p></p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                         {skillsData.map((category, index) => (
                                     <div key={index} className="item">
