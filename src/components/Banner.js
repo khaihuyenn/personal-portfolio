@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons"
-import headerImg from "../asset/img/header-img.svg"
+import headerImg from "../asset/img/header-img.png"
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
