@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
+import { ArrowDownCircle } from "react-bootstrap-icons";
 import headerImg from "../asset/img/header-img.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { Link } from 'react-scroll';
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -65,7 +66,9 @@ export const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to my Portfolio</span>
                         <h1>{`Hi! I'm Khai Huyen`}<span className="wrap"><h2>{text} {showCursor && "|"}</h2></span></h1>
-                            <button onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size = {25}/></button>
+                        <Link to="about" smooth={true} duration={500}>
+                          <button>About Me <ArrowDownCircle size={25} /></button>
+                        </Link>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header Img" />
