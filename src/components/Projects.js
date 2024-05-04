@@ -15,7 +15,7 @@ export const Projects = () => {
             title: "Responsive Portfolio Website",
             description: "Develop a personal portfolio website using HTML, CSS, JavaScript, and React.",
             imgUrl: projImg2,
-            githubUrl: "https://github.com/khaihuyenn/personal-portfolio.git"
+            githubUrl: "private"
             },
         {
             title: "GBA Pong Game",
