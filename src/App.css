@@ -37,7 +37,7 @@ html {
 
 body {
   font-weight: 400;
-  overflow: hidden;
+  overflow: visible;
   position: relative;
   background-color: #121212 !important;
   color: #fff !important;
@@ -73,6 +73,11 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.scrollable-content {
+  overflow-y: scroll; /* This makes the content scrollable vertically */
+  max-height: 100vh; /* Set a maximum height for your content */
 }
 
 p, a, li, button, ul {
