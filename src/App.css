@@ -348,7 +348,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .about {
   margin-top: 0;
   padding: 90px 0 180px 0;
-  background-image: url('./asset/img/education-bg.png');
+  background-image: url('./asset/img/banner-bg.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -372,9 +372,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /****************************** Education CSS ******************************/
 .education {
   margin-top: 0;
-  padding: 80px 0 250px 0;
-  background-image: url('./asset/img/education-bg.png');
-  background-position: center;
+  padding: 280px 0 150px 0;
+  background-image: url('./asset/img/banner-bg.png');
+  background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -612,7 +612,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   margin-top: 0;
   padding: 0px 0 280px 0;
-  background-image: url('./asset/img/banner-bg.png');
+  background-image: url('./asset/img/education-bg.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
