@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { ArrowDownCircle } from "react-bootstrap-icons";
+import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../asset/img/header-img.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -66,9 +66,9 @@ export const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to my Portfolio</span>
                         <h1>{`Hi! I'm Khai Huyen`}<span className="wrap"><h2>{text} {showCursor && "|"}</h2></span></h1>
-                        <Link to="about" smooth={true} duration={500}>
-                          <button>About Me <ArrowDownCircle size={25} /></button>
-                        </Link>
+                        <a href="https://drive.google.com/file/d/1Wy356iAbe1x42jHeQDWqri2AMmLRf0qS/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                            <button>Resume<ArrowRightCircle size={25} /></button>
+                        </a>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header Img" />
