@@ -66,6 +66,7 @@ export const Projects = () => {
                                     />
                                 )
                             }
+                            return null;
                         })
                         }
                       </Row>
@@ -74,7 +75,7 @@ export const Projects = () => {
                         <Row>
                             {
                                 projects.map((project, index) => {
-                                    if (index == 1|| index == 2) {
+                                    if (index === 1|| index === 2) {
                                         return (
                                             <ProjectCard
                                                 key={index}
@@ -82,6 +83,7 @@ export const Projects = () => {
                                             />
                                         )
                                     }
+                                    return null;
                                 })
                             }
                         </Row>
@@ -98,7 +100,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2} alt = "background"></img>
     </section>
   )
 }

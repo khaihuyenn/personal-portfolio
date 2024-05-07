@@ -13,8 +13,6 @@ import ReactLogo from "../asset/img/react-logo.png";
 import vsCodeLogo from "../asset/img/vscode-logo.png";
 import androidstudioLogo from "../asset/img/androidstudio-logo.png";
 import intelliJLogo from "../asset/img/intelliJ-logo.png";
-import arrow1 from "../asset/img/arrow1.svg";
-import arrow2 from "../asset/img/arrow2.svg";
 
 export const Skills = () => {
     const skillsData = [

@@ -3,61 +3,57 @@ import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../asset/img/header-img.png";
 import 'animate.css';
-import TrackVisibility from 'react-on-screen';
-import { Link } from 'react-scroll';
+
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState(100);
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const [index, setIndex] = useState(1);
+  //const [index, setIndex] = useState(1);
   const [showCursor, setShowCursor] = useState(true);
-  const toRotate = [ "CS student at Georgia Tech" ];
+  //const toRotate = [ "CS student at Georgia Tech" ];
   const period = 1000;
+  
   useEffect(() => {
+    const toRotate = ["CS student at Georgia Tech"];
+    const tick = () => {
+      let i = loopNum % toRotate.length;
+      let fullText = toRotate[i];
+      let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
+
+      setText(updatedText);
+
+      if (isDeleting) {
+        setDelta(prevDelta => prevDelta / 2);
+      }
+
+      if (!isDeleting && updatedText === fullText) {
+        setIsDeleting(true);
+        setDelta(period);
+      } else if (isDeleting && updatedText === '') {
+        setIsDeleting(false);
+        setLoopNum(loopNum + 1);
+        setDelta(100);
+      } else {
+        setDelta(100);
+      }
+    };
+
     let ticker = setInterval(() => {
       tick();
     }, delta);
 
-    return () => { clearInterval(ticker) };
-  }, [text, delta])
-  useEffect(() => {
     // Toggle cursor every 500 milliseconds
     const cursorInterval = setInterval(() => {
       setShowCursor((prev) => !prev);
     }, 500);
 
     return () => {
+      clearInterval(ticker);
       clearInterval(cursorInterval);
     };
-  }, [text]);
-
-    const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
-
-    setText(updatedText);
-
-    if (isDeleting) {
-      setDelta(prevDelta => prevDelta / 2);
-    }
-
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setIndex(prevIndex => prevIndex - 1);
-      setDelta(period);
-    } else if (isDeleting && updatedText === '') {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setIndex(1);
-      setDelta(100);
-    } else {
-      setIndex(prevIndex => prevIndex + 1);
-      setDelta(100);
-    }
-  }
+  }, [text, delta, loopNum, isDeleting]);
 
     return(
       <section className="banner" id="home">
