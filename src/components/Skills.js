@@ -10,6 +10,7 @@ import GitHubLogo from "../asset/img/GitHub-logo.png";
 import bootstrapLogo from "../asset/img/bootstrap-logo.png";
 import NodeJSLogo from "../asset/img/nodejs-logo.png";
 import ReactLogo from "../asset/img/react-logo.png";
+import FigmaLogo from "../asset/img/figma-logo.png";
 import vsCodeLogo from "../asset/img/vscode-logo.png";
 import androidstudioLogo from "../asset/img/androidstudio-logo.png";
 import intelliJLogo from "../asset/img/intelliJ-logo.png";
@@ -34,6 +35,7 @@ export const Skills = () => {
               { name: 'Bootstrap', logo: bootstrapLogo, size: { width: 50, height: 50 } },
               { name: 'Node.js', logo: NodeJSLogo, size: { width: 70, height: 50 } },
               { name: 'React', logo: ReactLogo, size: { width: 50, height: 50 } },
+              { name: 'Figma', logo: FigmaLogo, size: { width: 50, height: 50 } },
             ]
           },
           {
