@@ -1,2 +1,2 @@
 # Responsive Portfolio Website
-A responsive design with advanced animations personal portfolio website is developed using HTML, CSS, JavaScript, and React
+This is a personal portfolio website has a responsive design with advanced animations is developed using HTML, CSS, JavaScript, and React
