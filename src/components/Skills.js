@@ -18,7 +18,7 @@ import intelliJLogo from "../asset/img/intelliJ-logo.png";
 export const Skills = () => {
     const skillsData = [
         {
-            title: 'Coding Languages',
+            title: 'Programming Languages',
             items: [
               { name: 'HTML/CSS', logo: htmlCssLogo, size: { width: 80, height: 50 } },
               { name: 'JavaScript', logo: jsLogo, size: { width: 110, height: 50 } },
@@ -27,20 +27,32 @@ export const Skills = () => {
               { name: 'C', logo: cLogo, size: {width: 70, height: 50}}
             ]
           },
+
           {
-            title: 'Tools/Frameworks',
+            title: 'Front-End',
             items: [
-              { name: 'GitHub', logo: GitHubLogo, size: { width: 50, height: 50 } }, 
-              { name: 'Git', logo: gitLogo, size: { width: 50, height: 50 } },
-              { name: 'Bootstrap', logo: bootstrapLogo, size: { width: 50, height: 50 } },
-              { name: 'Node.js', logo: NodeJSLogo, size: { width: 70, height: 50 } },
-              { name: 'React', logo: ReactLogo, size: { width: 50, height: 50 } },
+              { name: 'HTML/CSS', logo: htmlCssLogo, size: { width: 80, height: 50 } },
+              { name: 'JavaScript', logo: jsLogo, size: { width: 110, height: 50 } },
               { name: 'Figma', logo: FigmaLogo, size: { width: 50, height: 50 } },
+              { name: 'React/React Native', logo: ReactLogo, size: { width: 50, height: 50 } },
+              { name: 'Bootstrap', logo: bootstrapLogo, size: { width: 50, height: 50 }}
+            ]
+          },
+
+          {
+            title: 'Back-End',
+            items: [
+              { name: 'Python', logo: pythonLogo, size: { width: 150, height: 50 } },
+              { name: 'Java', logo: javaLogo, size: { width: 110, height: 50 } },
+              { name: 'C', logo: cLogo, size: {width: 70, height: 50}},
+              { name: 'Node.js', logo: NodeJSLogo, size: { width: 70, height: 50 } }
             ]
           },
           {
-            title: 'IDEs',
+            title: 'Tools',
             items: [
+              { name: 'GitHub', logo: GitHubLogo, size: { width: 50, height: 50 } }, 
+              { name: 'Git', logo: gitLogo, size: { width: 50, height: 50 } },
               { name: 'VS Code', logo: vsCodeLogo, size: { width: 50, height: 50 } },
               { name: 'Android Studio', logo: androidstudioLogo, size: { width: 50, height: 50 } },
               { name: 'IntelliJ', logo: intelliJLogo, size: { width: 50, height: 50 } }
